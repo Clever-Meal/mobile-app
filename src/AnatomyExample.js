@@ -5,6 +5,7 @@ export default class AnatomyExample extends Component {
   render() {
     return (
       <Container>
+          <NavigationExample />
         <Header>
           <Left>
             <Button transparent>
