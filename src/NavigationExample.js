@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import AnatomyExample from './AnatomyExample';
 
 function HomeScreen({ navigation }) {
   return (
@@ -23,7 +24,7 @@ function DetailsScreen({ navigation }) {
         title="Go to Details... again"
         onPress={() => navigation.push('Details')}
       />
-      <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
+      <Button title="Go to Home" onPress={() => navigation.navigate('Foobar')} />
       <Button title="Go back" onPress={() => navigation.goBack()} />
       <Button
         title="Go back to first screen in stack"
@@ -39,11 +40,9 @@ function NavigationExample() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-        />
+        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Foobar" component={AnatomyExample} />
       </Stack.Navigator>
     </NavigationContainer>
   );
