@@ -4,18 +4,18 @@ import { Container, Content } from 'native-base';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 
-const MoreScreen = ({
+const OffersScreen = ({
     params,
 }) => (
     <Container>
-        <Header title="Settings" />
+        <Header title="Offers" />
         <Content>
             <View>
-                <Text>MoreScreen </Text>
+                <Text>OffersScreen </Text>
             </View>
         </Content>
-        <Footer />
+        <Footer activeScreen="Offers" />
     </Container>
 );
 
-export default MoreScreen;
+export default OffersScreen;

@@ -1,13 +1,19 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { Container } from 'native-base';
+import { Container, Content } from 'native-base';
+import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 
-function ProfileScreen() {
+export default function ProfileScreen() {
     return (
-        <View>
-            <Text>ProfileScreen </Text>
-        </View>
+        <Container>
+            <Header title="Profile" />
+            <Content>
+                <View>
+                    <Text>ProfileScreen </Text>
+                </View>
+            </Content>
+            <Footer activeScreen="Profile"/>
+        </Container>
     );
 }
-
-export default ProfileScreen;
