@@ -9,8 +9,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import ProfileScreen from './src/screens/ProfileScreen';
 import OrderScreen from './src/screens/OrderScreen';
 import ExploreScreen from './src/screens/ExploreScreen';
-import MoreScreen from './src/screens/MoreScreen';
-import { createStackNavigator } from '@react-navigation/stack';
+import SettingsScreen from './src/screens/SettingsScreen';
 import CartScreen from './src/screens/CartScreen';
 import OffersScreen from './src/screens/OffersScreen';
 
@@ -37,7 +36,6 @@ export default class App extends React.Component {
     }
 
     const Drawer = createDrawerNavigator();
-    const Stack = createStackNavigator();
 
     return (
       <NavigationContainer>
@@ -74,7 +72,7 @@ export default class App extends React.Component {
               drawerIcon: () => <Icon name="cart" />
             }}
           />
-          <Drawer.Screen name="More" component={MoreScreen}
+          <Drawer.Screen name="More" component={SettingsScreen}
             options={{
               drawerIcon: () => <Icon name="more" />
             }}
