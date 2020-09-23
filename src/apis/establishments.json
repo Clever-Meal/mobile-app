@@ -1,0 +1,28 @@
+{
+    "establishments": [
+        {
+            "uuid": "2c09324e-d4d6-4328-a33a-3efaef03a7a7",
+            "title": "Adega Sports Bar",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTflzEa6P1vXnW9OSqD0rw-TWjz4wUrSMwGgw&usqp=CAU",
+            "price_rate": 3,
+            "hours": "from 4pm to 2am",
+            "catalogPath": "http://localhost:1337/graphql"
+        },
+        {
+            "uuid": "37b49272-88e6-4240-8df4-4521a3fe893d",
+            "title": "Aduela bar",
+            "price_rate": 4,
+            "hours": "from 2pm to 2am",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/08/db/f1/65/taverne-avec-terrasse.jpg",
+            "catalogPath": "http://localhost:1337/graphql"
+        },
+        {
+            "uuid": "85b47892-da29-4f85-918c-55fba16f61cb",
+            "title": "Mirita's bar",
+            "price_rate": 1,
+            "hours": "from 6pm to 3am",
+            "image": "https://cdn.website.dish.co/media/2e/38/1673022/Cervejaria-Mirita-F388876A-B4E8-4AF2-B0D1-0E1C761EF3B9.jpg",
+            "catalogPath": "http://localhost:1337/graphql"
+        }
+    ]
+}
