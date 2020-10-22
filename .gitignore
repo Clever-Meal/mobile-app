@@ -6,6 +6,8 @@ npm-debug.*
 *.p12
 *.key
 *.mobileprovision
+*.lock
+*.json
 *.orig.*
 web-build/
 
