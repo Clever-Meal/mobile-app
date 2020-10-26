@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base';
+import { PermissionProvider } from './context/permissionContext';
 
 export default class AnatomyExample extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class AnatomyExample extends Component {
           </Text>
         </Content>
         <Footer>
+          <PermissionProvider >
           <FooterTab>
             <Button vertical>
               <Icon name="home" />
@@ -41,6 +43,7 @@ export default class AnatomyExample extends Component {
               <Text>Profile</Text>
             </Button>
           </FooterTab>
+          </PermissionProvider>
         </Footer>
       </Container>
     );
