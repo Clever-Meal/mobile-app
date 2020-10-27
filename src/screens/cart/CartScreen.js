@@ -1,13 +1,15 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import { Container, Content } from 'native-base';
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
+import Header from '../../layout/Header';
+import Footer from '../../layout/Footer';
+import { useCart } from './cartContext';
 
-const CartScreen = ({
-    params,
-}) => (
-    <Container>
+const CartScreen = () => {
+    const [ state, addItem, resetCart, removeItem, updateItem ] = useCart();
+    
+    return (
+        <Container>
         <Header title="Cart" />
         <Content>
             <View>
@@ -16,6 +18,7 @@ const CartScreen = ({
         </Content>
         <Footer />
     </Container>
-);
+    );
+};
 
 export default CartScreen;

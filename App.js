@@ -10,14 +10,14 @@ import ProfileScreen from './src/screens/ProfileScreen';
 import OrderScreen from './src/screens/OrderScreen';
 import ExploreScreen from './src/screens/ExploreScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
-import CartScreen from './src/screens/CartScreen';
+import CartScreen from './src/screens/cart/CartScreen';
 import OffersScreen from './src/screens/OffersScreen';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isReady: false,
+      isReady: false,R
     };
   }
 
